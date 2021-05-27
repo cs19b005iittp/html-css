@@ -1,0 +1,29 @@
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: slategrey;
+}
+
+p{
+    color: rgb(0, 47, 255);
+}
+
+form{
+    background-color: #303030;
+    border: orange solid 20px;
+}
+
+label{
+    color: gold;
+    text-align: left;
+}
+
+input{
+    color: rgb(19, 34, 255);
+}
+
+select{
+    color: rgb(248, 163, 52);
+}

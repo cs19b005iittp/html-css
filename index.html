@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <!-- when we create a web form first thing we need to do create a form tag -->
+        <!-- for doing so we can make a tag form as <form action=""></form> -->
+        <!-- but we will be noticing what will be calling as ACTION attribute -->
+        <!-- this attribute tells the browser what to do when we submit the. We will be dealing with this later  -->
+        <form>
+            <!-- Inside this form tag this is where we keep all inputs -->
+
+            <!-- for that we need input tags(single tag) with TYPE attribute -->
+            <!-- there's also another attribute called ID attribute -->
+            <!-- ID attribute is  bit like an identifier for this one individual "input" tag. The value must be unique  -->
+            <!-- and no other elements in the page should have this ID    -->
+            <!-- We can also keep another attribute called NAME attribute, it can be used as ID attribute -->
+            <!-- The NAME attribute can be used for server side processing 
+            so PHP file on the server can use that particular server can use name field to get that value for that particular input-->
+            <label for="user name"> Enter your user name : </label>
+            <input type="text" id="user name" name="user name" placeholder="E.g. : xxxyyzz" required>
+            <br><br>
+            <label for="email">Enter your email address : </label>
+            <input type="email" id="email" name="email" placeholder="E.g. : abc@xyz.com" required>
+            <br><br>
+            <label for="password">Enter your password : </label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+            <br><br>
+            <!-- In label tags we are supposed to use id of inputs so it will showing like prompts -->
+            <p>Select your Gender : </p>
+            <input type="radio" id ="male gender" name="gender" value="male">
+            <label for="male gender">Male</label>
+            <input type="radio" id="female gender" name="gender" value="female">
+            <label for="female gender">Female</label>
+            <input type="radio" name="gender" id="other gender" value="other">
+            <label for="other gender">Other</label>
+            <!-- We can different input fields and different types -->
+            <br><br>
+            <label for="study question">In what college do you study?</label>
+            <select name="study question" id="study question">
+                <option value="q1">IITs</option>
+                <option value="q2">NITs</option>
+                <option value="q3">Other Private Colleges</option>
+            </select>
+            <br><br>
+            <label for="bio">Enter your bio :</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About you"></textarea>
+
+            <br><br>
+            <label for="file">Select Your file: </label>
+            <input type="file" id="file" name="file">
+            <br><br>
+            <input type="submit" value="Submit" required>
+            <input type="reset">
+        </form>
+
+    </body>
+</html>
