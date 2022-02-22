@@ -1,2 +1,2 @@
 # Program for DFA
--	hello
+-	Hi, hello
